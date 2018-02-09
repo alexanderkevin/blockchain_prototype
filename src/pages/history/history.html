@@ -1,0 +1,55 @@
+
+<ion-header style="text-align:right">
+  <ion-navbar color="primary" >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img src="http://pngimg.com/uploads/ibm/ibm_PNG19649.png" style="width:70px;height:25px;"/>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card style="padding:5px 5px 5px 5px">
+    <ion-card-header style="border-bottom: 3px solid #253954">
+        Past Workitem
+    </ion-card-header>
+    <ion-list>
+      <button ion-item (click)="docStatus('J2IBEK84U')">
+        <ion-icon name="checkmark-circle" item-start></ion-icon>
+        <p>[J2IBEK84U] Process ended Succesfully</p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('K9JOPEQDX')">
+        <ion-icon name="checkmark-circle" item-start></ion-icon>
+        <p>[K9JOPEQDX] Process ended Succesfully</p>
+      </button>
+    </ion-list>
+    <!-- <ion-list>
+      <button ion-item (click)="docStatus('M2M23M4KSI')">
+        <ion-icon name="help-circle" item-start></ion-icon>
+        <p>[M2M23M4KSI] Still in progress</p>
+      </button>
+    </ion-list> -->
+    <ion-list>
+        <button ion-item (click)="docStatus('K9JOPEQDX')">
+          <ion-icon name="checkmark-circle" item-start></ion-icon>
+          <p>[K9JOPEQDX] Process ended Succesfully</p>
+        </button>
+      </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('J203941OK4')">
+        <ion-icon color="danger" name="close-circle" item-start></ion-icon>
+        <p ion-text color="danger"><b>[J203941OK4] Process Rejected by J93ID93KJF9OWK</b></p>
+      </button>
+    </ion-list>
+    <ion-list>
+        <button ion-item (click)="docStatus('K9JOPEQDX')">
+          <ion-icon name="checkmark-circle" item-start></ion-icon>
+          <p>[K9JOPEQDX] Process ended Succesfully</p>
+        </button>
+      </ion-list>
+
+  </ion-card>
+</ion-content>

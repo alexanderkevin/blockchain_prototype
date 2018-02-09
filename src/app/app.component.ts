@@ -5,6 +5,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { LoginPage } from '../pages/login/login';
+import { LogoutPage } from '../pages/logout/logout';
+import { PendingPage } from '../pages/pending/pending';
+import { OnGoingPage } from '../pages/on-going/on-going';
+import { DocStatusPage } from '../pages/doc-status/doc-status';
+import { WorkitemPage } from '../pages/workitem/workitem';
+import { WorkflowPage } from '../pages/workflow/workflow';
+import { HistoryPage } from '../pages/history/history';
+import { NewstreamPage } from '../pages/newstream/newstream';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,17 +21,22 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Home', component: HomePage,icon:'home' },
+      { title: 'Pending', component: PendingPage,icon:'alarm' },
+      { title: 'On Going', component: OnGoingPage,icon:'barcode' },
+      // { title: 'Newstream', component: NewstreamPage,icon:'paper' },
+      { title: 'Workflow', component: WorkflowPage,icon:'git-network' },
+      { title: 'History', component: HistoryPage,icon:'archive' },
+      { title: 'Log Out', component: LogoutPage,icon:'log-out' }
     ];
 
   }

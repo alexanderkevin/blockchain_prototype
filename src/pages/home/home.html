@@ -1,18 +1,59 @@
-<ion-header>
-  <ion-navbar>
+<ion-header style="text-align:right">
+  <ion-navbar color="primary" >
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <img src="http://pngimg.com/uploads/ibm/ibm_PNG19649.png" style="width:70px;height:25px;"/>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content >
+  <ion-card style="padding:5px 5px 5px 5px">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+      <ion-row>
+        <ion-col col-12>
+          <img src="https://www.mojix.com/wp-content/uploads/2017/08/blockchain08.jpg"/>
+        </ion-col>
+      </ion-row>
+      <ion-card-header style="border-bottom: 3px solid #253954;margin-bottom: 16px">
+        Blockchain Overview
+      </ion-card-header>
+      <ion-row >
+        <ion-col align-self: center col-6 (click)="pending()" style="border-right: 1px solid #d3d4d6">
+          <ion-card color="primary" style="text-align:center">
+            <ion-badge item-end style="font-size:4rem;margin-top:10px;margin-bottom:10px">4</ion-badge>
+            <ion-item style="text-align:center">
+              Pending
+            </ion-item>
+          </ion-card>
+          <!-- <ion-badge item-end style="font-size:4rem">12</ion-badge>
+          <ion-item>
+              Pending
+          </ion-item> -->
+        </ion-col>
+        <ion-col align-self: center col-6 (click)="onGoing()">
+          <ion-card color="primary" style="text-align:center">
+            <ion-badge item-end style="font-size:4rem;margin-top:10px;margin-bottom:10px;">243</ion-badge>
+            <ion-item style="text-align:center">
+              In Progress
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-card-header style="border-bottom: 3px solid #253954;margin-bottom: 16px">
+    Process Updates
+  </ion-card-header>
+  <ion-list>
+    <button ion-item (click)="docStatus('X312XJS1')"><b>[X312XJS1]</b> Has been completed </button> 
+    <button ion-item (click)="docStatus('SFD2ASSD')"><b>[SFD2ASSD]</b> Still Waiting for approval</button> 
+    <button ion-item (click)="docStatus('XSDSFSD2')"><b>[XSDSFSD2]</b> PO Created</button> 
+    <button ion-item (click)="docStatus('ASKSO33E')"><b>[ASKSO33E]</b> Still Waiting for approval</button> 
+    <button ion-item (click)="docStatus('ASDASS12')"><b>[ASDASS12]</b> BL I been approved</button> 
+    <button ion-item (click)="docStatus('ASD123SA')"><b>[ASD123SA]</b> Has been approved</button> 
+    <button ion-item (click)="docStatus('OPOS12SD')"><b>[OPOS12SD]</b> PO Has been approved</button> 
+    <button ion-item (click)="docStatus('X232K2K2')"><b>[X232K2K2]</b> BL I been approved</button> 
+  </ion-list>
+
+</ion-card>
 </ion-content>

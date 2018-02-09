@@ -1,0 +1,55 @@
+<ion-header style="text-align:right">
+  <ion-navbar color="primary" >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img src="http://pngimg.com/uploads/ibm/ibm_PNG19649.png" style="width:70px;height:25px;"/>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card style="padding:5px 5px 5px 5px">
+    <ion-card-header style="border-bottom: 3px solid #253954; margin-bottom:16px">
+      Workitem Data
+    </ion-card-header>
+      <form (ngSubmit)="logForm()">
+        <ion-item>
+          <ion-label><b>Process ID</b></ion-label>
+          <ion-input type="text" [(ngModel)]="todo.a" name="PID" disabled="true" placeholder="{{selectedItem}}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label><b>Shipper</b></ion-label>
+          <ion-textarea [(ngModel)]="todo.b" name="Shipper" disabled="true" placeholder="PT. Budi Anto LTD."></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label><b>Origin</b></ion-label>
+          <ion-textarea [(ngModel)]="todo.c" name="Origin" disabled="true" placeholder="Thailand"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label><b>Consignee</b></ion-label>
+          <ion-textarea [(ngModel)]="todo.d" name="Consignee" disabled="true" placeholder="PT. Darth Illoite Tbk."></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label><b>Destination</b></ion-label>
+          <ion-textarea [(ngModel)]="todo.e" name="Destination" disabled="true" placeholder="Indonesia"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label><b>Item</b></ion-label>
+          <ion-textarea [(ngModel)]="todo.f" name="Item" disabled="true" placeholder="Automotive"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label><b>Due Date</b></ion-label>
+          <ion-textarea [(ngModel)]="todo.g" name="DueDate" disabled="true" placeholder="Thur, 24 January 2018 00:00:00 GMT+7"></ion-textarea>
+        </ion-item>
+        <ion-row>
+          <ion-col col-6>
+              <button ion-button type="submit" block style="background-color:#dc4343"(click)="showConfirmReject()">Reject</button>
+          </ion-col>
+          <ion-col col-6>
+              <button ion-button type="submit" block style="background-color:#51cc42" (click)="showConfirmApprove()">Approve</button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-card>
+  </ion-content>

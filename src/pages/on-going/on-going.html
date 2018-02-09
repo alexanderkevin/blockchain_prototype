@@ -1,0 +1,104 @@
+<ion-header style="text-align:right">
+  <ion-navbar color="primary" >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img src="http://pngimg.com/uploads/ibm/ibm_PNG19649.png" style="width:70px;height:25px;"/>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-card style="padding:5px 5px 5px 5px">
+    <ion-card-header style="border-bottom: 3px solid #253954">
+        PO Approval
+    </ion-card-header>
+    <ion-list>
+      <button ion-item (click)="docStatus('AL1P29SD')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[AL1P29SD] PO need approval</p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('290KLS02')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p ion-text color="danger"><b>[290KLS02] PO need approval</b></p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('PA912KSI')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[PA912KSI] PO need approval</p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('09K183JD')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[09K183JD] PO need approval</p>
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card style="padding:5px 5px 5px 5px">
+    <ion-card-header style="border-bottom: 3px solid #253954">
+        BL I Approval
+    </ion-card-header>
+    <ion-list>
+      <button ion-item (click)="docStatus('AL1P29SD')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[AL1P29SD] BL need approval</p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('290KLS02')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p ion-text color="danger"><b>[290KLS02] BL need approval</b></p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('PA912KSI')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p ion-text color="danger"><b>[PA912KSI] BL need approval</b></p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('09K183JD')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[09K183JD] BL need approval</p>
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card style="padding:5px 5px 5px 5px">
+    <ion-card-header style="border-bottom: 3px solid #253954">
+        BL 2 Approval
+    </ion-card-header>
+    <ion-list>
+      <button ion-item (click)="docStatus('AL1P29SD')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[AL1P29SD] BL need approval</p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('290KLS02')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[290KLS02] BL need approval</p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('PA912KSI')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[PA912KSI] BL need approval</p>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="docStatus('09K183JD')">
+        <ion-icon name="document" item-start></ion-icon>
+        <p>[09K183JD] BL need approval</p>
+      </button>
+    </ion-list>
+    <ion-list style="text-align: right">
+      <p> <sub ion-text color="danger"><b>*require immediate action</b></sub></p>
+    </ion-list>
+  </ion-card>
+</ion-content>
+  

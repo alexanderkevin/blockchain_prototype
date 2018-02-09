@@ -1,0 +1,42 @@
+<ion-content padding style="background-image: url('https://squawker.org/wp-content/uploads/DA-Ransbotham-Blockchain-Data-Storage-Business-Model-Bitcoin-1200-1200x627.jpg');">
+  <ion-grid style="height: 100%">
+      <ion-row justify-content-center align-items-center style="height: 100%">
+        <ion-card>
+          <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
+            <ion-row>
+              <ion-col>
+                <ion-list>
+                  <ion-row>
+                      <ion-col col-4></ion-col>
+                      <ion-col col-4><img src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-IBM-Logo-Black-PNG-Transparent-500x200.png" style="width:90px;height:30px;"/></ion-col>
+                      <ion-col col-4></ion-col>
+                  </ion-row>
+
+                  <ion-item>
+                    <ion-label floating>Username</ion-label>
+                    <ion-input type="text" name="loginField" required [(ngModel)]="username" #email></ion-input>
+                  </ion-item>
+                
+                  <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password" name="passwordField" required [(ngModel)]="password"></ion-input>
+                  </ion-item>
+                
+                </ion-list>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <button ion-button class="submit-btn" full type="submit" >Login
+                </button>
+                <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+              </ion-col>
+            </ion-row>
+      
+          </form>
+        </ion-card>
+      </ion-row>
+  </ion-grid>  
+  
+</ion-content>
+

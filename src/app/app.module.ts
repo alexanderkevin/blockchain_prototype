@@ -8,12 +8,31 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LoginPage } from '../pages/login/login';
+import { LogoutPage } from '../pages/logout/logout';
+import { PendingPage } from '../pages/pending/pending';
+import { OnGoingPage } from '../pages/on-going/on-going';
+import { DocStatusPage } from '../pages/doc-status/doc-status';
+import { WorkitemPage } from '../pages/workitem/workitem';
+import { WorkflowPage } from '../pages/workflow/workflow';
+import { HistoryPage } from '../pages/history/history';
+import { NewstreamPage } from '../pages/newstream/newstream';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    LoginPage,
+    LogoutPage,
+    PendingPage,
+    OnGoingPage,
+    DocStatusPage,
+    WorkitemPage,
+    WorkflowPage,
+    HistoryPage,
+    NewstreamPage,
+    DocStatusPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +42,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    LoginPage,
+    LogoutPage,
+    PendingPage,
+    OnGoingPage,
+    DocStatusPage,
+    WorkitemPage,
+    WorkflowPage,
+    HistoryPage,
+    NewstreamPage,
+    DocStatusPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,6 @@
 {
   "name": "blockchain",
-  "app_id": "",
+  "app_id": "48f65365",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
